@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تحدّي الرسم | ارسمها</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">🎨</span>
+      <span>ارسمها</span>
+    </a>
+    <button class="nav-toggle" aria-label="القائمة">☰</button>
+    <div class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html">عن الورشة</a>
+      <a href="tools.html">الأدوات</a>
+      <a href="lessons.html">الدروس</a>
+      <a href="challenge.html" class="active">تحدّي الرسم</a>
+      <a href="gallery.html">المعرض</a>
+      <a href="contact.html">تواصل معنا</a>
+    </div>
+  </nav>
+
+  <!-- قسم التحدي -->
+  <section class="section">
+    <h2 class="section-title">تحدّي الرسم</h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">اختبر مهاراتك في رسم سريع وممتع</p>
+
+    <div class="challenge-container">
+      <div class="challenge-box">
+        <h2>⏱️ تحدّي الخمس دقائق</h2>
+        <p class="challenge-desc">اختر فكرة بسيطة من القائمة أو اضغط "اختر لي فكرة" ثم ارسمها خلال خمس دقائق. لا تقلق من النتيجة، المهم هو المتعة والتدرّب!</p>
+
+        <!-- قائمة الأفكار -->
+        <div class="idea-list" id="idea-list">
+          <!-- يتم ملؤها بواسطة JavaScript -->
+        </div>
+
+        <!-- الفكرة المختارة -->
+        <p style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--gray);">
+          الفكرة المختارة: <strong id="current-idea" style="color: var(--pink);">لم تختر فكرة بعد</strong>
+        </p>
+
+        <!-- أزرار التحدي -->
+        <div class="challenge-actions">
+          <button class="btn btn-pink" id="random-idea">🎲 اختر لي فكرة</button>
+        </div>
+
+        <!-- المؤقت -->
+        <div class="timer-label" id="timer-label">اضغط "ابدأ" لبدء التحدي</div>
+        <div class="timer-display" id="timer-display">05:00</div>
+
+        <div class="timer-buttons">
+          <button class="btn btn-primary" id="start-timer">▶ ابدأ</button>
+          <button class="btn btn-outline" id="reset-timer" style="display: none;">↻ إعادة</button>
+        </div>
+
+        <!-- رسالة النجاح -->
+        <div class="challenge-message" id="challenge-message">
+          🎉 أحسنت! شارك رسومتك أو احتفظ بها لتلاحظ تطوّرك.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer class="footer">
+    <p class="footer-logo">ارسمها <span>|</span> ورشة رسم</p>
+    <p>صُمّم هذا الموقع لمشروع تعليمي</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معرض الرسومات | ارسمها</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">🎨</span>
+      <span>ارسمها</span>
+    </a>
+    <button class="nav-toggle" aria-label="القائمة">☰</button>
+    <div class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html">عن الورشة</a>
+      <a href="tools.html">الأدوات</a>
+      <a href="lessons.html">الدروس</a>
+      <a href="challenge.html">تحدّي الرسم</a>
+      <a href="gallery.html" class="active">المعرض</a>
+      <a href="contact.html">تواصل معنا</a>
+    </div>
+  </nav>
+
+  <!-- قسم المعرض -->
+  <section class="section">
+    <h2 class="section-title">معرض الرسومات</h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">كل رسمة لها حكاية، وهنا نحتفل بالأفكار والإبداع</p>
+
+    <div class="gallery-grid">
+      <!-- زهرة الربيع -->
+      <div class="gallery-item">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&q=80" alt="زهرة الربيع" onerror="this.style.display='none';">
+        </div>
+        <div class="gallery-info">
+          <h4>زهرة الربيع</h4>
+          <p>رسم بالألوان الخشبية</p>
+        </div>
+      </div>
+
+      <!-- غروب هادئ -->
+      <div class="gallery-item">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=400&q=80" alt="غروب هادئ" onerror="this.style.display='none';">
+        </div>
+        <div class="gallery-info">
+          <h4>غروب هادئ</h4>
+          <p>رسم بالألوان المائية</p>
+        </div>
+      </div>
+
+      <!-- شجرة الحياة -->
+      <div class="gallery-item">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=400&q=80" alt="شجرة الحياة" onerror="this.style.display='none';">
+        </div>
+        <div class="gallery-info">
+          <h4>شجرة الحياة</h4>
+          <p>رسم بالألوان الخشبية</p>
+        </div>
+      </div>
+
+      <!-- كوب عصير -->
+      <div class="gallery-item">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=400&q=80" alt="كوب عصير" onerror="this.style.display='none';">
+        </div>
+        <div class="gallery-info">
+          <h4>كوب عصير</h4>
+          <p>رسم بقلم الرصاص والألوان</p>
+        </div>
+      </div>
+
+      <!-- بيت الأحلام -->
+      <div class="gallery-item">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400&q=80" alt="بيت الأحلام" onerror="this.style.display='none';">
+        </div>
+        <div class="gallery-info">
+          <h4>بيت الأحلام</h4>
+          <p>رسم بقلم الرصاص</p>
+        </div>
+      </div>
+
+      <!-- سمكة ملونة -->
+      <div class="gallery-item">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?w=400&q=80" alt="سمكة ملونة" onerror="this.style.display='none';">
+        </div>
+        <div class="gallery-info">
+          <h4>سمكة ملونة</h4>
+          <p>رسم بالألوان المائية</p>
+        </div>
+      </div>
+
+      <!-- وجه مبتسم -->
+      <div class="gallery-item">
+        <div class="gallery-image">
+          <img src="assets/images/smiley.png" alt="وجه مبتسم" onerror="this.style.display='none';">
+        </div>
+        <div class="gallery-info">
+          <h4>وجه مبتسم</h4>
+          <p>رسم بقلم الرصاص</p>
+        </div>
+      </div>
+
+      <!-- فراشة -->
+      <div class="gallery-item">
+        <div class="gallery-image">
+          <img src="assets/images/butterfly.jpg" alt="فراشة" onerror="this.style.display='none';">
+        </div>
+        <div class="gallery-info">
+          <h4>فراشة</h4>
+          <p>رسم بالألوان الخشبية</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- رفع صورة -->
+    <div class="gallery-upload">
+      <h3>📤 أضف رسمتك</h3>
+      <p>اختر صورة من جهازك لعرضها هنا (لن تُرسل إلى أي مكان)</p>
+      <input type="file" id="upload-image" accept="image/*" style="display: none;">
+      <button class="btn btn-secondary" onclick="document.getElementById('upload-image').click()">اختر صورة</button>
+
+      <div class="upload-preview" id="upload-preview">
+        <img id="preview-img" src="" alt="رسمتك">
+        <p style="margin-top: 0.8rem; color: var(--gray);">رسمتك معروضة هنا مؤقتًا</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer class="footer">
+    <p class="footer-logo">ارسمها <span>|</span> ورشة رسم</p>
+    <p>صُمّم هذا الموقع لمشروع تعليمي</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

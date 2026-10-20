@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | ارسمها</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">🎨</span>
+      <span>ارسمها</span>
+    </a>
+    <button class="nav-toggle" aria-label="القائمة">☰</button>
+    <div class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html">عن الورشة</a>
+      <a href="tools.html">الأدوات</a>
+      <a href="lessons.html">الدروس</a>
+      <a href="challenge.html">تحدّي الرسم</a>
+      <a href="gallery.html">المعرض</a>
+      <a href="contact.html" class="active">تواصل معنا</a>
+    </div>
+  </nav>
+
+  <!-- قسم التواصل -->
+  <section class="section">
+    <h2 class="section-title">تواصل معنا</h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">يسعدنا نسمع رأيك! أرسل لنا اقتراحًا أو سؤالًا عن الورشة</p>
+
+    <div class="contact-container">
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name">الاسم *</label>
+          <input type="text" id="name" name="name" placeholder="اكتب اسمك" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">البريد الإلكتروني (اختياري)</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="lesson">الدرس المفضل</label>
+          <select id="lesson" name="lesson">
+            <option value="">اختر درسًا...</option>
+            <option value="flower">ارسم زهرة بسيطة</option>
+            <option value="eye">ارسم عينًا مبسطة</option>
+            <option value="landscape">ارسم منظرًا طبيعيًا</option>
+            <option value="challenge">تحدّي الخمس دقائق</option>
+            <option value="other">أخرى</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">رسالتك *</label>
+          <textarea id="message" name="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+        </div>
+
+        <div style="text-align: center;">
+          <button type="submit" class="btn btn-primary">إرسال</button>
+        </div>
+      </form>
+
+      <!-- رسالة النجاح -->
+      <div class="form-success" id="form-success">
+        ✅ شكرًا لمشاركتك، وصلتنا رسالتك!
+      </div>
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer class="footer">
+    <p class="footer-logo">ارسمها <span>|</span> ورشة رسم</p>
+    <p>صُمّم هذا الموقع لمشروع تعليمي</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
